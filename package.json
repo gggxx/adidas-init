@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/gggxx/adidas-init/issues"
   },
-  "homepage": "https://github.com/gggxx/adidas-init#readme"
+  "homepage": "https://github.com/gggxx/adidas-init#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inline-source": "^3.0.0",
+    "gulp-less": "^3.3.0"
+  }
 }
