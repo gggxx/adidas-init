@@ -1,0 +1,22 @@
+{
+  "name": "adidas-init",
+  "version": "1.0.0",
+  "description": "a template folder for adi-development",
+  "main": "app.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gggxx/adidas-init.git"
+  },
+  "keywords": [
+    "adi"
+  ],
+  "author": "ggg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gggxx/adidas-init/issues"
+  },
+  "homepage": "https://github.com/gggxx/adidas-init#readme"
+}
