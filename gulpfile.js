@@ -8,12 +8,17 @@ gulp.task('less2css' , ()=>{
 	    .pipe( gulp.dest( './css' ) )
 })
 
-gulp.task('inline' , ()=>{
+gulp.task('inline' ,['less2css'] , ()=>{
 
 	gulp.src('./app.html' )
 	    .pipe( inline() )
 	    .pipe( gulp.dest( './dist/app-inline.html' ) )
 })
 
+gulp.task( 'watch' , ()=>{
 
-gulp.task( 'default' , ['less2css' , 'inline']);
+	gulp.watch(['./css/src/*.less','./js/*.js'],['less2css','inline']);
+})
+
+
+gulp.task( 'default' , ['less2css' , 'inline' , 'watch']);
