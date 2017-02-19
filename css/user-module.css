@@ -69,21 +69,22 @@
   width: 750px;
   margin: 0 auto;
 }
-.user-section {
+.user-row-full {
   width: 100%;
+  height: auto;
 }
-.user-section:before {
+.user-row-full:before {
   display: table ;
   content: '';
 }
-.user-section:after {
+.user-row-full:after {
   clear: both;
 }
-.user-section:before {
+.user-row-full:before {
   display: table ;
   content: '';
 }
-.user-section:after {
+.user-row-full:after {
   clear: both;
 }
 .user-module .color-lcst:hover a {
