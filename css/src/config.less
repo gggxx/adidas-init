@@ -1,0 +1,56 @@
+// config.less
+@lcst : #316346;
+@grey : #666666;
+@col-main : 750px;
+@full : 1920px;
+@layout : 1098px;
+@imgUrl-prefix : 'https://https://img.alicdn.com/imgextra';
+@huge : 1600px ;
+
+.trs ( @arg : all .3s ease-out ){transition: @arg;-webkit-transition: @arg;-moz-transition: @arg;-ms-transition: @arg;-o-transition: @arg;}
+.trf ( @arg ) { transform: @arg;-webkit-transform: @arg;-moz-transform: @arg;-ms-transform: @arg;-o-transform: @arg;}
+.bs ( @style , @color ){ box-shadow: @style , @color }
+.disp ( @arg : block ){ display: @arg }
+.block( @arg: block ){ display: @arg }
+.pd( @arg ) { padding: @arg ;}
+.mg( @arg ) { margin: @arg ; }
+.wh( @w:auto , @h:auto ) { width: @w ; height: @h; }
+.sq( @val ) { width:@val ; height: @val }
+.fs( @fontSize , @lineHeight:inherit ) { font-size: @fontSize ; line-height:@lineHeight;}
+.ff( ){ font-family:microsoft yahei, 微软雅黑 ,arial;  }
+.pos( @t:0, @r:auto , @b:auto, @l:0 ){ top:@t; right:@r; bottom:@b; left:@l; }
+.tl0() { left:0; top:0;}
+.tl( @l:0 , @t:0 ){ left:@l; top:@t; }
+
+.border-box() {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+//border-radius
+.br( @arg ){ border-radius: @arg; }
+//background
+.bg ( @color:#666 ) { background:@color ;}
+//background-position
+.bp ( @x , @y ){ background-position: @x @y; }
+.bi ( @url , @repeat: no-repeat , @pos: 0 0 ) { background:@url @repeat @pos; }
+.bg-cover(){ background-size:cover; }
+.fl (){ float: left; }
+.fr (){ float: right; }
+.abs (){ position :absolute; }
+.rel (){ position: relative; }
+.al-c (){ text-align:center; }
+.al-l (){ text-align:left; }
+.al-r (){ text-align:right; }
+.ov-hide (){ overflow:hidden; }
+.mg-auto (){ margin:0 auto;}
+.hide (){ display:none; }
+.show (){ display:block; }
+.cb (){  &:before { display:table ; content:'';} &:after  { clear:both; } }
+
+.op0 (){ opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+.op1 (){ opacity:1; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+// .op( @arg ){ opacity: @arg ; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+.ob-fit  (){ position: absolute;left: 0;top: 0;width: 100%;height: 100%; object-fit: cover; }

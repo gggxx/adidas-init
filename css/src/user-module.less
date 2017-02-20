@@ -1,0 +1,65 @@
+// user-module.less
+@import 'config.less';
+
+.fl { .fl; }
+.fr { .fr; }
+.abs { .abs; }
+.rel { .rel; }
+.al-c , .align-c { .al-c; }
+.al-l , .align-l { .al-l; }
+.al-r , .align-r { .al-r; }
+.ov-hide { .ov-hide; }
+.mg-auto { .mg-auto; }
+.hide { .hide; }
+.show { .show; }
+.cb { .cb; }
+
+.bg-cover{ .bg-cover; }
+
+.op0 { .op0; }
+.op1 { .op1; }
+.ob-fit  { .ob-fit; }
+
+.user-app { width:100%; height:100%; overfow-x:hidden }
+.user-col-main { width: @col-main ; .mg-auto ; }
+.user-row-full { .wh( 100% , auto ); .cb }
+.user-module{
+
+	.color-lcst:hover a { color:@lcst; }
+	a { color: @grey; }
+	.trans-c   { .abs; left:50%;.trf( translateX(-50%) );}
+	.trans-300 { .trs ( all .3s ease-out ); }
+	.trans-500 { .trs ( all .5s ease-out ); }
+	.trans-900 { .trs ( all .6s ease-out ); }
+	.trans-1s  { .trs ( all  1s ease-out ); }
+	.trans-2s-500 { .trs( all 2s ease-out .5s ) }
+
+	.fullscreen { width : @full ; .rel ; top:0px; left:50%; margin-left:-960px;  }
+	.layout { width: @layout; .rel ; .mg-auto ; .cb }
+	.block { width:100%; height:auto; .rel ; .cb; }
+	.row { width:100%; .rel ; .cb }
+	.col { width: auto ; height:auto; .rel ; display:inline-block; }
+
+	.h-center {
+		.ov-hide ; 
+		& img {.rel ; top:50%; width:100% ; height:auto;.trf( translateY(-50%) );}
+	}
+	.w-center {
+		.ov-hide;
+		& img {.rel ; left:50%; width:auto; height:100%;.trf( translateX(-50%) );}
+	}
+
+	.pin { left:0; top:0; .ov-hide; cursor:pointer; }
+	.pin.flip { .op0; &:hover { .op1; } }
+	.pin.mask { .op1; &:hover { .op0; } }
+
+	.pin.trans-up:hover { .trf( translateY(-7px) ); }
+	.pin.trans-down:hover { .trf( translateY(5px ) ); }
+	.pin.trans-left:hover { .trf( translateX(-5px) ); }
+	.pin.trans-right:hover { .trf( translateX(5px) ); }
+	.pin.rotate-r { 
+		.trf( rotate(-15deg) ) ;
+		&:hover { .trf( rotate(15deg) ); } 
+	}
+	.pin.trans-zoomout:hover { .trf( scale(1.05 )); }
+}
