@@ -10,9 +10,9 @@ gulp.task('less2css' , ()=>{
 
 gulp.task('inline' ,['less2css'] , ()=>{
 
-	gulp.src('./app.html' )
+	gulp.src('./main/*.html' )
 	    .pipe( inline() )
-	    .pipe( gulp.dest( './dist/app-inline.html' ) )
+	    .pipe( gulp.dest( './dist' ) )
 })
 
 gulp.task( 'watch' , ()=>{
