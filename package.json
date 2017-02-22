@@ -21,6 +21,7 @@
   "homepage": "https://github.com/gggxx/adidas-init#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-html-import": "^0.0.2",
     "gulp-inline-source": "^3.0.0",
     "gulp-less": "^3.3.0"
   }
