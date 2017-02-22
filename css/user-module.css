@@ -144,23 +144,23 @@
   left: 50%;
   margin-left: -960px;
 }
-.user-module .layout {
+.user-module .user-layout {
   width: 1098px;
   position: relative;
   margin: 0 auto;
 }
-.user-module .layout:before {
+.user-module .user-layout:before {
   display: table ;
   content: '';
 }
-.user-module .layout:after {
+.user-module .user-layout:after {
   clear: both;
 }
-.user-module .layout:before {
+.user-module .user-layout:before {
   display: table ;
   content: '';
 }
-.user-module .layout:after {
+.user-module .user-layout:after {
   clear: both;
 }
 .user-module .block {

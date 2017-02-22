@@ -21,7 +21,7 @@ gulp.task('inline' ,[ 'less2css'] , ()=>{
 
 
 gulp.task( 'watch' , ()=>{
-	gulp.watch(['./css/src/*.less','./js/*.js'],['less2css','inline']);
+	gulp.watch(['./css/src/*.less','./js/*.js','./components/*.html','./main/*.html'],['less2css','inline']);
 })
 
 // gulp.task('default',['import'])
